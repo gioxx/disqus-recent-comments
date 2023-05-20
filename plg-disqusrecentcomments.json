@@ -1,0 +1,24 @@
+{
+	"name" : "Disqus Recent Comments",
+	"slug" : "disqus-recent-comments",
+	"author" : "<a href='https://gioxx.org'>Gioxx</a>",
+	"author_profile" : "https://profiles.wordpress.org/gioxx",
+    	"donate_link" : "https://ko-fi.com/gioxx",
+	"version" : "0.3",
+	"download_url" : "https://github.com/gioxx/disqus-recent-comments/releases/download/0.3/disqus-recent-comments.zip",
+	"requires" : "6.2",
+	"tested" : "6.2.1",
+	"requires_php" : "7.4",
+    	"added" : "2014-10-01 00:00:00",
+	"last_updated" : "2023-05-20 17:15:00",
+    	"homepage" : "https://gioxx.org",
+	"sections" : {
+		"description" : "Show the latest comments from Disqus (using API 3.0 and JSON).",
+		"installation" : "Activate the plugin, insert the widget in your blog sidebar (or other place) and configure the required parameters following the informations available on the screen.",
+		"changelog" : "<h4>20/5/23</h4><ul><li>New: Hello GitHub! All informations about previous versions of the plugin are available at <a href=\"https://go.gioxx.org/disqus-recent-comments\">go.gioxx.org/disqus-recent-comments</a></li></ul>"
+	},
+	"banners" : {
+		"low" : "https://gioxx.github.io/disqus-recent-comments/img/banner-772x250.jpg",
+		"high" : "https://gioxx.github.io/disqus-recent-comments/img/banner-1544x500.jpg"
+	}
+}
