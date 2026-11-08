@@ -174,6 +174,8 @@ add_filter( 'plugin_row_meta', function( $links_array, $plugin_file_name, $plugi
 			),
 			__( 'View details' )
 		);
+		$links_array[] = '<a href="https://github.com/gioxx/disqus-recent-comments" target="_blank" rel="noopener noreferrer">' . esc_html__( 'View on GitHub', 'disqus-recent-comments' ) . '</a>';
+		$links_array[] = '<a href="https://wordpress.gioxx.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins by Gioxx', 'disqus-recent-comments' ) . '</a>';
 	}
 	return $links_array;
 }, 25, 4 );
@@ -317,6 +319,17 @@ class wdg_DsqRcnCmmJSON extends WP_Widget {
 			<!-- Avatar -->
 	    	<input class="checkbox" type="checkbox" <?php checked( $instance[ 'avatar' ], 'on' ); ?> id="<?php echo $this->get_field_id( 'avatar' ); ?>" name="<?php echo $this->get_field_name( 'avatar' ); ?>" />
 			<label for="<?php echo $this->get_field_id( 'avatar' ); ?>"><?php _e( 'Show avatars' ); ?></label>
+		</p>
+		<p class="description" style="margin-top:12px;font-size:11px;">
+			<?php
+			printf(
+				/* translators: 1: plugin name, 2: link to the author's site, 3: link to the author's plugin gallery */
+				esc_html__( '%1$s by %2$s · %3$s', 'disqus-recent-comments' ),
+				'Disqus Recent Comments',
+				'<a href="https://gioxx.org" target="_blank" rel="noopener noreferrer">Gioxx</a>',
+				'<a href="https://wordpress.gioxx.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins', 'disqus-recent-comments' ) . '</a>'
+			);
+			?>
 		</p>
 		<?php
 	}
