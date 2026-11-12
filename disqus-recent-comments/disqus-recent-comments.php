@@ -175,7 +175,7 @@ add_filter( 'plugin_row_meta', function( $links_array, $plugin_file_name, $plugi
 			__( 'View details' )
 		);
 		$links_array[] = '<a href="https://github.com/gioxx/disqus-recent-comments" target="_blank" rel="noopener noreferrer">' . esc_html__( 'View on GitHub', 'disqus-recent-comments' ) . '</a>';
-		$links_array[] = '<a href="https://wordpress.gioxx.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins by Gioxx', 'disqus-recent-comments' ) . '</a>';
+		$links_array[] = '<a href="https://wordpress.gxware.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins by Gioxx', 'disqus-recent-comments' ) . '</a>';
 	}
 	return $links_array;
 }, 25, 4 );
@@ -327,7 +327,7 @@ class wdg_DsqRcnCmmJSON extends WP_Widget {
 				esc_html__( '%1$s by %2$s · %3$s', 'disqus-recent-comments' ),
 				'Disqus Recent Comments',
 				'<a href="https://gioxx.org" target="_blank" rel="noopener noreferrer">Gioxx</a>',
-				'<a href="https://wordpress.gioxx.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins', 'disqus-recent-comments' ) . '</a>'
+				'<a href="https://wordpress.gxware.org/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'More plugins', 'disqus-recent-comments' ) . '</a>'
 			);
 			?>
 		</p>
